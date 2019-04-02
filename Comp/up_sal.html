@@ -1,0 +1,29 @@
+<html>
+	<head><title>Update Salary Details</title></head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link   rel="stylesheet" type="text/css" href="index.css"/>
+	<script type="text/JavaScript" src="./js/general.js" ></script>
+	<body>
+		<br/>
+		<p class="heading">Update Salary Details</p>
+		<div class="insert_border">
+			<a class="gray right_button" href='index.html'>Back</a><br/>
+
+			<form method="post" onsubmit="return(up_sal_val());" action="up_sal.php" name="upsal_frm">
+				
+				<label class="labl_cls" >Employee Number:</label><input  type="text" class="inputs" name="emp_no" maxlength="10" /><br/><br/>
+				<label class="labl_cls" >Basic Pay:</label><input  type="text" class="inputs" name="basic_pay" maxlength="10" /><br/><br/>
+				<label class="labl_cls" >DA (in %):</label><input  type="text" class="inputs" name="da" maxlength="10" /><br/><br/>
+				<label class="labl_cls" >PF (in %):</label><input  type="text"  class="inputs" name="pf" maxlength="10" /><br/><br/>
+				<label class="labl_cls" >HRA (in %):</label><input  type="text" class="inputs" name="hra" maxlength="10" /><br/><br/>
+
+				<!-- Net Salary :<input  type="text" name="basic_pay" maxlength="10" readonly="readonly" ><br/><br/> -->
+
+				<input class="gray left_button"  type="submit" value="Submit" >
+				<input class="gray" type="reset" value="Clear" ><br/><br/>
+		<div><textarea class="error_box" id="ins_err_box" name="ins_err" readonly="readonly" ></textarea><br/></div>
+			</form>
+		</div>	
+	</body>
+</html>
+

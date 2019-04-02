@@ -1,0 +1,35 @@
+<html>
+	<head><title> Employee Form</title></head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link   rel="stylesheet" type="text/css" href="index.css" />
+	<script type="text/JavaScript" src="./js/general.js" ></script>
+	<body>
+		<br/>
+		<p class="heading">Add Employee Details</p>
+		<div class="insert_border" name="ins_di">
+			<a class="gray right_button" href='index.html'>Back</a><br/>
+			<form method="post" onsubmit="return(insert_val());" action="insert.php"  name="insert_frm">
+			
+				<label class="labl_cls" >Name:</label><input type="text" name="emp_name" size="30" class="inputs" maxlength="25"  /><br/><br/>
+				<label class="labl_cls" >Gender:</label>
+					<label class="labl_gen" >Male</label><input type="radio" name="gender" value='M'  />
+					<label class="labl_gen" >Female</label><input type="radio" name="gender" value='F' /><br/><br/>
+				<label class="labl_cls" >Address:</label><textarea name="address" ></textarea><br/><br/>
+				<label class="labl_cls" >Date of Birth:</label><input type="date" name="dob" class="inputs" maxlength="10" size="30" placeholder="dd/mm/yyyy"/><br/><br/>
+				<label class="labl_cls" >Parent Name:</label><input  type="text" name="p_name" class="inputs" maxlength="25" size="30"   /><br/><br/>
+				<label class="labl_cls" >Contact:</label><input  type="text" name="cont" class="inputs" maxlength="12" size="30" /><br/><br/>
+				<label class="labl_cls" >E-mail id:</label><input  type="text" name="email_id" class="inputs" maxlength="30" size="30" /><br/><br/>
+				<label class="labl_cls" >Department:</label><input  type="text" name="depat" class="inputs" maxlength="20" size="30" /><br/><br/>
+				<label class="labl_cls" >Division:</label><input  type="text" name="division" class="inputs" maxlength="20" size="30" /><br/><br/>
+				<label class="labl_cls" >Designation:</label><input  type="text" name="desig" class="inputs" maxlength="20" size="30" /><br/><br/>
+
+				<input class="gray left_button"  type="submit" value="Submit" >
+				<input class="gray" type="reset" value="Clear" ><br/><br/>
+		<div><textarea class="error_box" id="ins_err_box" name="ins_err" readonly="readonly" ></textarea><br/></div>
+			</form>	
+			<script>
+			</script>
+		</div>	
+	</body>
+</html>
+
